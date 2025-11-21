@@ -20,8 +20,6 @@ async def hello(ctx):
 async def pasw(ctx):
     await ctx.send(gen_pass(10))
 
-# ========== IDE NOMOR 3 (FITUR HIBURAN) ==========
-
 @bot.command()
 async def coin(ctx):
     result = random.choice(["HEADS", "TAILS"])
@@ -37,6 +35,5 @@ async def emoji(ctx):
     emojis = ["😀", "🔥", "🐱", "🌙", "🍀", "🚀", "⭐", "😎"]
     await ctx.send(random.choice(emojis))
 
-# ================================================
 
 bot.run("token")
